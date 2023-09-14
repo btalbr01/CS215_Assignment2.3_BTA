@@ -1,0 +1,33 @@
+class Node<T>{
+	private T data;
+	Node<T> nextNode;
+	
+	public Node()
+	{
+		nextNode=null;
+		data=null;
+	}
+	
+	public Node(T data)
+	{
+		this.data = data;
+		nextNode = null;
+	}
+	
+	public void setData(T data) {
+		this.data=data;
+	}
+	
+	public T getData() {
+		return this.data;
+	}
+	public Node<T> getNode() {
+		return this;
+	}
+	public void setNextNode(Node<T> nextNode)
+	{
+		this.nextNode=nextNode;
+	}
+	
+	
+}
